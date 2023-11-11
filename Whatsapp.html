@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp clone</title>
+    <link rel="stylesheet" href="Whatsapp.css">
+    <script src="https://kit.fontawesome.com/8be7eab697.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="Whatsapp">
+        <div class="top1">
+            <div class="name">
+                <p>Neville Khabuchi Jnr</p>
+                <p>Me today Vs Me yesterday</p>
+            </div>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-camera"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="top2">
+            <div class="button"><button onclick="function1()">Community<div id="divider"></div></button>
+        </div>
+           <div class="button"><button onclick="function2()">Chats<div id="divider"></div></button>
+        <button id="value">2</button>
+        </div>
+            <div class="button"><button onclick="function3()">Groups<div id="divider"></div></button>
+        <button id="value">4</button>
+        </div>
+            <div class="button"><button onclick="function4()">Status<div id="divider"></div></button>
+        <button id="value"></button>
+        </div>
+            <div class="button"><button onclick="function5()">Calls<div id="divider"></div></button>
+        <button id="value">1</button>
+        </div>
+        </div>
+        <div class="community" id="community">
+            <div class="subCommunity">
+                <div class="communityIcon">
+                 <p><i class="fa-solid fa-people-group"></i></p>
+                 <p><i class="fa-solid fa-plus"></i></p>
+                </div>
+                <div class="communityContent">
+                    <p>New community</p>
+                </div>
+            </div>
+            <div class="communityDivider"></div>
+            <div class="subCommunity">
+                <div class="communityIcon">
+                 <p><img src="/profile/pexels-christina-morillo-1181676.jpg"alt="profilePic"></p>
+                </div>
+                <div class="communityContent">
+                    <p>Data Science Africa Community(DSAC)</p>
+                </div>
+            </div>
+            <div class="subCommunity">
+                <div class="communityIcon">
+                 <p><img src="/profile/jordan.jpg"alt="profilePic"></p>
+                </div>
+                <div class="communityContent">
+                    <p>DON COLLECTIONS KENYA</p>
+                </div>
+            </div>
+        </div>
+        <div class="Chats" id="Chats">
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/IMG_20221213_140320_349.jpg" alt="profile"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Rodrick</p>
+                        <p>12:00</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Kibro code</p>
+                        <p> today at 12:05PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="pexels-bruno-silva-16989749.jpg" alt="Profile"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Jimmy Rubia</p>
+                        <p>11:05</p>
+                    </div>
+                    <div class="bottom">
+                        <p>OK</p>
+                        <p>today at 11:05</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/pexels-avery-arwood-18399715.jpg" alt="profile"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Tracy</p>
+                        <p>09:00</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Ilikuwa nikupitie lakini...</p>
+                        <p>today at 11:05</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/pexels-irish-heart-photography-12194918.jpg" alt="profile"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Molly</p>
+                        <p>Yesterday <i class="fa-solid fa-check-double" style="color: #00B9E8;"></i></p>
+                    </div>
+                    <div class="bottom">
+                        <p>Have a nice time bro</p>
+                        <p>today at 10:05</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/chief-1387.jpg" alt="profile"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Falcon</p>
+                        <p>Yesterday <i class="fa-solid fa-check-double color" style="color: #00B9E8;"></i></p>
+                    </div>
+                    <div class="bottom">
+                        <p>Niko best mkuu</p>
+                        <p>today at 11:05</p>
+                    </div>
+                </div>
+            </div>
+            <p id="lastMessage">Your personal messages are <span>end-to-end encrypted</span></p>
+          <p id="compose"><i class="fa-solid fa-message fa-rotate-180" id="composeicon" style="color: azure;"></i></p> 
+        </div>
+        <div class="Groups" id="Groups">
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="profile/compdept.jpg"alt="profilePic"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>Comp Dept</p>
+                        <p>10/11/23</p>
+                    </div>
+                    <div class="bottom">
+                        <p>COD: Students should adhere to..</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="profile/kuista.jpg"alt="profilePic"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>KUISTA GROUP 2</p>
+                        <p>10/10/23</p>
+                    </div>
+                    <div class="bottom">
+                        <p>~Brigid: Follow this link..</p>
+                        <button>3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/The go-getters.jpg"alt="profilePic"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>THE GO-GETTERS</p>
+                        <p>10/11/23</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Bense: Kutakuwa na meeting saa...</p>
+                        <button>1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/profile/career.jpg"alt="profilePic"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>KSU CAREER AMBASSADORS</p>
+                        <p>10/11/23</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Johnston: I will remove you from..</p>
+                        <button>25</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chatName">
+                <div class="profilepic">
+                    <p><img src="/software.jpg"alt="profilePic"></p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <p>SOFTWARE ENGINEERING 2.1</p>
+                        <p>10/10/23</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Curtis: Kutakuwa na class..</p>
+                        <button>5</button>
+                    </div>
+                </div>
+            </div>
+            <p id="compose"><i class="fa-solid fa-message fa-rotate-180" id="composeicon" style="color: azure;"></i></p> 
+        </div>
+         <div class="Status" id="Status">
+         <div class="Status1">
+            <div class="statuses one">
+                <p><img src="/profile/jpeg.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>My status</p>
+                <p><i class="fa-solid fa-ellipsis"></i></p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,10:30 PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="statusdivider">
+            <p>Recent updates</p>
+          </div>
+          <div class="Status1">
+            <div class="statuses">
+                <p><img src="/profile/jpeg.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>Darius Shikoli</p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,10:29 PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="Status1">
+            <div class="statuses">
+                <p><img src="/profile/jpeg.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>LarryAbel</p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,10:25</p>
+            </div>
+          </div>
+          </div>
+          <div class="Status1">
+            <div class="statuses one">
+                <p><img src="/profile/jpeg.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>Rhone Jambiha</p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,10:20 PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="statusdivider">
+            <p>Viewed Updates</p>
+          </div>
+          <div class="Status1">
+            <div class="statuses two">
+                <p><img src="/profile/chips.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>Chelsea</p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,12:49 PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="Status1">
+            <div class="statuses two">
+                <p><img src="/profile/girl.jpg"alt="profilePic"></p>
+            </div>
+            <div class="statuscontent">
+            <div class="statusesTop">
+                <p>Venom</p>
+            </div>
+            <div class="statusesBottom">
+                <p>Today,11:49 PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="statusicons">
+           <p><i class="fa-solid fa-scissors"></i></p>
+            <p><i class="fa-solid fa-pencil"></i></p>
+            <p><i class="fa-solid fa-camera"></i></p>
+          </div>
+        </div>
+        
+        <div class="Calls" id="Calls">
+            <div class="call">
+                <div class="callLink mylink">
+                <p><i class="fa-solid fa-link"></i></p>
+                </div>
+                <div class="callContent">
+                    <div> <p>Create call link</div>
+                    <p>Share a link for your Whatsapp Call</p>
+                </div>
+            </div>
+            <div class="callDivider">
+                <p>Recent</p>
+            </div>
+            <div class="call">
+                <div class="callLink">
+                <p><img src="profile/book.jpg"alt="profilePic"></p>
+                </div>
+                <div class="callContent">
+                   <div> <p>Mum</p><i class="fa-solid fa-phone" style="color: #1c6929;"></i></div>
+                   <div><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #f22602;"></i><p>01 October,18;42</p></div>
+                </div>
+            </div>
+        <div class="call">
+            <div class="callLink">
+            <p><img src="profile/book.jpg"alt="profilePic"></p>
+            </div>
+            <div class="callContent">
+               <div> <p>Mum</p><i class="fa-solid fa-phone" style="color: #1c6929;"></i></div>
+               <div><i class="fa-solid fa-arrow-right" style="color: #39a81a;"></i> <p>29th October,18:38</p></div>
+            </div>
+        </div>
+        <div class="call">
+            <div class="callLink">
+            <p><img src="profile/book.jpg"alt="profilePic"></p>
+            </div>
+            <div class="callContent">
+               <div> <p>Mum</p><i class="fa-solid fa-phone" style="color: #1c6929;"></i></div>
+               <div><i class="fa-solid fa-arrow-right" style="color: #39a81a;"></i> <p>29th October,18:38</p></div>
+               <div> <p>01 November,18;42</p></div>
+            </div>
+        </div>
+        <div class="callIcons">
+            <p><i class="fa-solid fa-blender-phone"></i></p>
+            <p><i class="fa-solid fa-trash"></i></p>
+        </div>
+    </div>
+    <div class="footer">
+        <i class="fa-regular fa-square"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+    </div>
+</div>
+
+    </div>
+    <script src="Whatsapp.js"></script>
+</body>
+</html>

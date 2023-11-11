@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #CD7F32;
+}
+.Whatsapp {
+    margin: 30px;
+    padding: 10px;
+    width: 400px;
+    height: 800px;
+    border-radius: 10px;
+    background-color: #010B13;
+    color: #F5F5F5;
+}
+.top1 {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.top1 div {
+    width: max-content;
+    margin: auto 0;
+}
+.top1 div p:first-of-type {
+    animation: slide 20s infinite;
+    height: 20px;
+    overflow: hidden;
+}
+@keyframes slide {
+    0% {
+        padding-left: 0;
+    }
+    100% {
+        padding-left: 100%;
+    }
+}
+.top1 i{
+    margin: auto;
+    font-size: larger;
+}
+.top2 {
+    height: 50px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+.top2 #divider {
+    margin-top: 5px;
+}
+.top2 .button button:nth-of-type(2) {
+width: 15px;
+height: 15px;
+border-radius: 50%;
+position: relative; 
+top: 2px;
+right: 2px; 
+}
+#value {
+    font-size: x-small;
+}
+
+.top2 .button {
+    border: 0;
+}
+.top2 .button button {
+    color:#32CD32;
+    background-color: #010B13;
+    border: 0;
+}
+.top2 .button #value {
+    background-color: gray;
+    color: black;
+}
+.top2 button:focus{
+    border-bottom: 5px solid #32CD32;
+}
+.top2 button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.community {
+    width: 380px;
+    height:660px;
+    position: absolute;
+    display: none;
+    visibility: hidden;
+}
+.communityIcon p:first-of-type {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.communityIcon p:first-of-type i {
+   font-size: 2.5rem;
+   position: relative;
+   top: 14px;
+   left: 10px;
+}
+.communityIcon p img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+.communityIcon p:nth-of-type(2){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 41px;
+    background-color: #32CD32;
+    padding: 8px;
+}
+.subCommunity {
+    display: flex;
+    margin: 7px 0;
+}
+.communityDivider {
+    height: 2px;
+    background-color: #3B3C36;
+}
+.communityContent {
+    margin:auto 5px;
+}
+.subCommunity:hover {
+    background-color: #004225;
+    padding: 5px;
+    cursor: pointer;
+}
+.Chats {
+    height: 660px;
+    width: 380px;
+    position: absolute;
+    /* display: none;
+    visibility: hidden; */
+}
+
+.chatName {
+    display: flex;
+    height: 60px;
+    margin: 5px 0;
+}
+.chatName:hover {
+    background-color: #004225;
+    cursor: pointer;
+    padding: 10px;
+}
+.chatName .profilepic p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1.5px;
+}
+.chatName .profilepic img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.content {
+    width: 100%;
+    margin: auto 0;
+    height: 45px;
+}
+.content .top {
+    display: flex;
+    justify-content: space-between;
+}
+.content .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.content .top p {
+    width: max-content;
+}
+.content .top p:nth-of-type(2){
+    color: gray;
+}
+.content .bottom p:first-of-type{
+    color: gray;
+}
+.content .bottom button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #32CD32;
+    color: black;
+    border: 0;
+}
+.Chats #compose {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    font-size: xx-large;
+    align-content: center;
+    padding: 12px;
+    background-color: #32CD32;
+}
+#lastMessage {
+    font-size: x-small;
+    text-align: center;
+    margin: 20px 0;
+}
+#lastMessage span {
+    color: #32CD32;
+}
+.Groups {
+    height: 660px;
+    width: 380px;
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    margin: 5px 0;
+}
+.Groups #compose {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 240px;
+    left: 300px;
+    font-size: xx-large;
+    align-content: center;
+    padding: 12px;
+    background-color: #32CD32;
+}
+.Status {
+    height: 660px;
+    width:380px;
+    position:absolute;
+    display: none;
+    visibility: hidden;
+    margin: 5px 0;
+}
+.Status .Status1 {
+    display: flex;
+    height: 75px;
+}
+.statuscontent {
+    width: 100%;
+    margin: auto 5px;
+}
+.statuses p {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 3px dashed green;
+}
+.Status1:hover {
+    cursor: pointer;
+    background-color: #004225;
+    padding: 5px;
+}
+.one p{
+    border: 3px solid green;
+}
+.two p{
+    border: 3px dashed gray;
+}
+.statuses img {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+}
+.statusesTop {
+    display: flex;
+    justify-content: space-between;
+}
+.statusdivider {
+    height: 20px;
+    background-color: #111111;
+}
+.statusicons {
+    width: 50px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    left: 320px;
+    top: 460px;
+
+}
+.statusicons p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #32CD32;
+}
+.statusicons i {
+    font-size: x-large;
+    position: relative;
+    left: 12px;
+    top: 10px;
+    color: azure;
+}
+.statusesBottom{
+    color: gray;
+}
+.Calls {
+    height: 660px;
+    width:380px;
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    margin: 5px 0;
+}
+.call {
+    display: flex;
+    margin: 5px 0;
+}
+.call:hover {
+    background-color: #004225;
+    cursor: pointer;
+}
+.callContent {
+    margin: auto 5px;
+    width: 300px;
+    color: gray;
+}
+.callContent div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+.callContent div:nth-of-type(2){
+    display: flex;
+}
+.callLink p {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.callLink img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+.mylink p:first-of-type{
+    background-color: #32CD32;
+    padding: 22px;
+    font-size: 1.5rem;
+}
+.callDivider {
+    height: 20px;
+    background-color: #111111;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+.callIcons {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 50px;
+    height: 120px;
+    position: relative;
+    top: 180px;
+    left: 310px;
+    
+}
+.callIcons i {
+    font-size: x-large;
+    position: relative;
+    color: azure;
+}
+.callIcons p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 13.5px;
+    background-color: #32CD32;
+    
+}
+.footer {
+    width: 380px;
+    height: 25px;
+    padding: 8px;
+    /* margin: 0 12px; */
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 660px;
+    background-color: #111111;
+}
+.footer i:hover{
+    color: azure;
+    cursor: pointer;
+}
